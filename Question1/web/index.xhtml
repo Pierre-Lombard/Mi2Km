@@ -6,7 +6,18 @@
         <title>Facelet Title</title>
     </h:head>
     <h:body>
-        Hello from Facelets
+        <h:form>
+            <h1>Enter the speed in miles</h1>
+            <br></br>
+            <h:inputText
+                value = "#{convert.distance}">
+            </h:inputText>
+            <br></br>
+            <h:commandButton
+                value = "Convert to kilometers"
+                action = "results.xhtml">
+            </h:commandButton>    
+        </h:form>
     </h:body>
 </html>
 
